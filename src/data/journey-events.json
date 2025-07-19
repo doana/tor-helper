@@ -1,0 +1,99 @@
+{
+    "event_types": [
+        "Terrible Misfortune",
+        "Despair",
+        "Ill Choices",
+        "Mishap",
+        "Short Cut",
+        "Chance Meeting",
+        "Joyful Sight"
+    ],
+    "roles": [
+        "Scout",
+        "Lookout", 
+        "Hunter"
+    ],
+    "fatigue": {
+        "Terrible Misfortune": 3,
+        "Despair": 2,
+        "Ill Choices": 2,
+        "Mishap": 2,
+        "Short Cut": 1,
+        "Chance Meeting": 1,
+        "Joyful Sight": 0
+    },
+    "events": [
+        {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Ill gains - The Meat of the prey makes the hunter ill",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Rival predator - Avoid becomming the hunted",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Last throes - Get injured by your slain prey",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Flanked - Another beast or animal of the same type attacks",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Dragged - The prey drags the hunter a distance",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Faulty Trap - A trap set by the hunter injures them",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        }
+    ]
+}

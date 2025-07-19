@@ -7,26 +7,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Button from '@mui/material/Button';
 import JourneyEvent from './JourneyEvent';
 
-const journeyEventsList = [
-  {
-    target: 'Scout',
-    event: 'Landslide',
-    details: 'A landslide blocks the path.',
-    result: 'Detour required.'
-  },
-  {
-    target: 'Hunter',
-    event: 'Bridge Collapse',
-    details: 'The bridge has collapsed overnight.',
-    result: 'Find alternate crossing.'
-  },
-  {
-    target: 'Lookout',
-    event: 'Wildlife Sighting',
-    details: 'A bear is spotted near the trail.',
-    result: 'Wait until safe.'
-  },
-];
+import data from '../data/journey-events.json';
+
+const journeyEventsList = data.events;
 
 const getRandomEvent = () => {
   const idx = Math.floor(Math.random() * journeyEventsList.length);
@@ -42,7 +25,7 @@ const JourneyEventGenerator: React.FC = () => {
     const event = getRandomEvent();
     setCurrentEvent(event);
     setLog(prev => [event, ...prev]);
-    setEventCount(eventCount + 1);
+    setEventCount(log.length);
   };
 
   const handleNewJourney = () => {
