@@ -4,7 +4,9 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import {Button, InputLabel, Select, MenuItem} from '@mui/material'
+import CasinoIcon from '@mui/icons-material/Casino';
+import ExploreIcon from '@mui/icons-material/Explore';
+import {Button, InputLabel, Select, MenuItem, FormControl} from '@mui/material'
 import type { SelectChangeEvent } from '@mui/material/Select';
 
 
@@ -21,7 +23,7 @@ const JourneyEventGenerator: React.FC = () => {
   const [eventCount, setEventCount] = useState(0)
   const [region, setRegion] = useState("border");
 
-  const getRandomEvent = () => {
+  const getRandomEvent = (): object => {
     const target = getRandomTarget();
     const event_type = getRandomEventType();
     const targeted_events = getRoleEvents(target, event_type);
@@ -89,22 +91,25 @@ const JourneyEventGenerator: React.FC = () => {
 
   return (
     <div>
-      <div id="journey-form" className="d-flex flex-row justify-content-center align-items-center flex-grow-1 gap-1">
+      <div id="journey-form" className="d-flex flex-column justify-content-center align-items-center flex-grow-1 gap-1">
         <span className="region-wrapper d-flex flex-row align-items-center gap-1">
-          <InputLabel id="region-label">Region</InputLabel>
-          <Select
-            labelId="region-label"
-            id="region"
-            value={region}
-            label="Region"
-            onChange={handleRegionChange}
-          >
-            <MenuItem value={"border"}>Border Land</MenuItem>
-            <MenuItem value={"wild"}>Wild Land</MenuItem>
-            <MenuItem value={"dark"}>Dark Land</MenuItem>
-          </Select>
+          <FormControl fullwidth size="small" sx={{ minWidth: 120 }}>
+            <InputLabel id="region-label">Region</InputLabel>
+            <Select
+              labelId="region-label"
+              id="region"
+              value={region}
+              label="Region"
+              onChange={handleRegionChange}
+              >
+              <MenuItem value={"border"}>Border Land</MenuItem>
+              <MenuItem value={"wild"}>Wild Land</MenuItem>
+              <MenuItem value={"dark"}>Dark Land</MenuItem>
+            </Select>
+          </FormControl>
+          
         </span>
-        <Button variant="contained" onClick={handleRandomize} sx={{ mb: 2 }}>
+        <Button variant="contained" onClick={handleRandomize} startIcon={<CasinoIcon />}>
           Next Event
         </Button>
       </div>
@@ -132,7 +137,7 @@ const JourneyEventGenerator: React.FC = () => {
       </Accordion>
 
       <div className="mt-4 d-flex flex-row justify-content-end gap-1">
-        <Button variant="contained" onClick={handleNewJourney} sx={{ mb: 2 }}>
+        <Button variant="contained" onClick={handleNewJourney} startIcon={<ExploreIcon />}>
           New Journey
         </Button>  
       </div>

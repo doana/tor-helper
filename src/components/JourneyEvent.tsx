@@ -13,22 +13,22 @@ const JourneyEvent: React.FC<JourneyEventProps> = ({ target, event, details, res
   }
   
   return (
-    <div className="d-flex flex-column">
-      <span className="d-flex flex-row gap-1">
+    <div className="journey-event d-flex flex-column">
+      <span className="property d-flex flex-row gap-2">
         <span className="label fw-bold">Target:</span>
-        <span>{target}</span>
+        <span className="value">{target}</span>
       </span>
-      <span className="d-flex flex-row gap-1">
+      <span className="property d-flex flex-row gap-2">
         <span className="label fw-bold">Event:</span>
-        <span>{event}</span>
+        <span className="value">{event}</span>
       </span>
-      <span className="d-flex flex-row gap-1">
+      <span className="property d-flex flex-row gap-2">
         <span className="label fw-bold">Details:</span>
-        <span>{details}</span>
+        <span className="value">{details}</span>
       </span>
-      <span className="d-flex flex-row gap-1">
+      <span className="property d-flex flex-row gap-2">
         <span className="label fw-bold">Result:</span>
-        <span>{result}</span>
+        <span className="value">{result}</span>
       </span>
     </div>
   );
