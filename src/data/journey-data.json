@@ -139,145 +139,145 @@
         {
             "target": "Hunter",
             "event": "Mishap",
-            "detail": "Sparce wildlife - Forage what you can",
+            "details": "Sparce wildlife - Forage what you can",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
             "target": "Hunter",
             "event": "Mishap",
-            "detail": "In the thicket - The prey wanders into a hazardous terrain",
+            "details": "In the thicket - The prey wanders into a hazardous terrain",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
             "target": "Hunter",
             "event": "Mishap",
-            "detail": "Faulty equipment - Take time to repair hunting gear",
+            "details": "Faulty equipment - Take time to repair hunting gear",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
             "target": "Hunter",
             "event": "Mishap",
-            "detail": "Elusive quarry - Hunt to track it down",
+            "details": "Elusive quarry - Hunt to track it down",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
             "target": "Hunter",
             "event": "Mishap",
-            "detail": "No luck - Traps don’t seem to work",
+            "details": "No luck - Traps don’t seem to work",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
             "target": "Hunter",
             "event": "Mishap",
-            "detail": "Disturbed wildlife - A hasty retreat is necessary",
+            "details": "Disturbed wildlife - A hasty retreat is necessary",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
             "target": "Hunter",
-            "event": "Shortcut",
-            "detail": "Game trail - Hunting to traverse the path",
+            "event": "Short Cut",
+            "details": "Game trail - Hunting to traverse the path",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
-            "event": "Shortcut",
-            "detail": "Forage path - Forage grows along a short cut",
+            "event": "Short Cut",
+            "details": "Forage path - Forage grows along a short cut",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
-            "event": "Shortcut",
-            "detail": "Rich bounty - Especially energy-rich or quick meals",
+            "event": "Short Cut",
+            "details": "Rich bounty - Especially energy-rich or quick meals",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
-            "event": "Shortcut",
-            "detail": "Animal guide - Follow at a distance",
+            "event": "Short Cut",
+            "details": "Animal guide - Follow at a distance",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
-            "event": "Shortcut",
-            "detail": "Lucky short cut - The hunter discovers a short cut while hunting",
+            "event": "Short Cut",
+            "details": "Lucky short cut - The hunter discovers a short cut while hunting",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
-            "event": "Shortcut",
-            "detail": "Beastly help - A beast creates a short cut",
-            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
-        },
-        {
-            "target": "Hunter",
-            "event": "Chance Meeting",
-            "detail": "Lone hunter - Trade stories",
+            "event": "Short Cut",
+            "details": "Beastly help - A beast creates a short cut",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
             "event": "Chance Meeting",
-            "detail": "Hunting party - Trade provisions and gear",
+            "details": "Lone hunter - Trade stories",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
             "event": "Chance Meeting",
-            "detail": "Domesticated animal - Encounter of some domesticated animal",
+            "details": "Hunting party - Trade provisions and gear",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
             "event": "Chance Meeting",
-            "detail": "Noble beast - Hunting to commune with it",
+            "details": "Domesticated animal - Encounter of some domesticated animal",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
             "event": "Chance Meeting",
-            "detail": "Helpful predator - A predator tolerates the help of the Hunter",
+            "details": "Noble beast - Hunting to commune with it",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
             "event": "Chance Meeting",
-            "detail": "Fine prey - Hunter encounters a particular fine prey",
+            "details": "Helpful predator - A predator tolerates the help of the Hunter",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "details": "Fine prey - Hunter encounters a particular fine prey",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Hunter",
             "event": "Joyful Sight",
-            "detail": "Majestic creatures - Observe without startling them",
+            "details": "Majestic creatures - Observe without startling them",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
         {
             "target": "Hunter",
             "event": "Joyful Sight",
-            "detail": "Rare foraging - Very rare foraging (like rare medicinal herbs)",
+            "details": "Rare foraging - Very rare foraging (like rare medicinal herbs)",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
         {
             "target": "Hunter",
             "event": "Joyful Sight",
-            "detail": "Elven hunter or Great Eagle - Noble elven hunter or Great Eagle high above",
+            "details": "Elven hunter or Great Eagle - Noble elven hunter or Great Eagle high above",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
         {
             "target": "Hunter",
             "event": "Joyful Sight",
-            "detail": "Abundant foraging - Hunting to replenish the rations of the Company",
+            "details": "Abundant foraging - Hunting to replenish the rations of the Company",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
         {
             "target": "Hunter",
             "event": "Joyful Sight",
-            "detail": "Tame beast - A beast suddenly self-tames and becomes friendly",
+            "details": "Tame beast - A beast suddenly self-tames and becomes friendly",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
         {
             "target": "Hunter",
             "event": "Joyful Sight",
-            "detail": "Rare prey - Very rare prey (like a white stag)",
+            "details": "Rare prey - Very rare prey (like a white stag)",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
         {
@@ -426,37 +426,37 @@
         },
         {
             "target": "Lookout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Hidden Path - The Look-out discovers a hidden path",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Lookout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Distant Sounds - A river or village noises help a quicker orientation",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Lookout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Helpful Tracks - Awareness to follow the tracks",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Lookout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Good Vantage - The Look-out locates a shorter path",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Lookout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Distant Signs - Smoke or other signals lead to a better path",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Lookout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Waypoint - Awareness to recognize the landmark",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
@@ -655,7 +655,7 @@
         {
             "target": "Scout",
             "event": "Mishap",
-            "details": "Misjudged Shortcut - A short-cut turns out to take longer",
+            "details": "Misjudged Short Cut - A short-cut turns out to take longer",
             "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
         },
         {
@@ -678,38 +678,38 @@
         },
         {
             "target": "Scout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Local Knowledge - The Scout remembers something about this area",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Scout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Secluded Path - Explore to navigate the wilds",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Scout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Quick Work - The Scout opened a way quickly",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Scout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Cozy Camp - The Company is very refreshed after the last rest",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Scout",
-            "event": "Shortcut",
+            "event": "Short Cut",
             "details": "Favourable Weather - Explore to make the most of it",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
             "target": "Scout",
-            "event": "Shortcut",
-            "details": "Natural Shortcut - A ford, a fallen tree bridge, stepping stones in a cliff",
+            "event": "Short Cut",
+            "details": "Natural Short Cut - A ford, a fallen tree bridge, stepping stones in a cliff",
             "result": "If the roll succeeds, reduce the length of the journey by 1 day."
         },
         {
