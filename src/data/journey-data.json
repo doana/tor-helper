@@ -532,7 +532,257 @@
             "details": "Music - The Look-Out hears pleasant music",
             "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
         },
-        
-        
+        {
+            "target": "Scout",
+            "event": "Terrible Misfortune",
+            "details": "Falling down - The Scout slips and tumbles down",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Scout",
+            "event": "Terrible Misfortune",
+            "details": "Poisoned - The Scout gets poisoned while exploring",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Scout",
+            "event": "Terrible Misfortune",
+            "details": "Violent Weather - Explore to find shelter",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Scout",
+            "event": "Terrible Misfortune",
+            "details": "Camp Collapses - Everyone barely gets out",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Scout",
+            "event": "Terrible Misfortune",
+            "details": "Dangerous Terrain - Explore to find a safer route",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Scout",
+            "event": "Terrible Misfortune",
+            "details": "Triggered a Trap - The Scout triggers a trap",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Scout",
+            "event": "Despair",
+            "details": "Endless - This terrain seems endless with no clear path",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Despair",
+            "details": "Torrent - Explore to find the least exposed path",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Despair",
+            "details": "Evil Spirit - Explore to find a better camp site",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Despair",
+            "details": "Misjudged Speed - Nightfall surprises the unprepared Company",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Despair",
+            "details": "Corrupted Area - Explore to find your way out",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Despair",
+            "details": "Enchanted Obstacle - An unsettling obstacle leads the Company astray",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Ill Choices",
+            "details": "Bad Weather - The journey takes longer without a better route",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Ill Choices",
+            "details": "Lost Direction - Explore to find your way",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Ill Choices",
+            "details": "Misjudged - A short-cut turns out to take longer",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Ill Choices",
+            "details": "Blocked Route - You cannot pass, no progress",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Ill Choices",
+            "details": "Rough Terrain - Explore to safely traverse",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Ill Choices",
+            "details": "Forgotten Things - Travel back to pick up forgotten things",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Scout",
+            "event": "Mishap",
+            "details": "Bad Weather - The journey takes longer without a better route",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Scout",
+            "event": "Mishap",
+            "details": "Lost Direction - Explore to find your way",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Scout",
+            "event": "Mishap",
+            "details": "Misjudged Shortcut - A short-cut turns out to take longer",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Scout",
+            "event": "Mishap",
+            "details": "Blocked Route - You cannot pass, no progress",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Scout",
+            "event": "Mishap",
+            "details": "Rough Terrain - Explore to safely traverse",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Scout",
+            "event": "Mishap",
+            "details": "Forgotten Things - Travel back to pick up forgotten things",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Scout",
+            "event": "Shortcut",
+            "details": "Local Knowledge - The Scout remembers something about this area",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Shortcut",
+            "details": "Secluded Path - Explore to navigate the wilds",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Shortcut",
+            "details": "Quick Work - The Scout opened a way quickly",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Shortcut",
+            "details": "Cozy Camp - The Company is very refreshed after the last rest",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Shortcut",
+            "details": "Favourable Weather - Explore to make the most of it",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Shortcut",
+            "details": "Natural Shortcut - A ford, a fallen tree bridge, stepping stones in a cliff",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Chance Meeting",
+            "details": "Wandering Traders - You find a camp of wandering merchants",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Chance Meeting",
+            "details": "Fellow Traveller - Explore to learn about the path ahead",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Chance Meeting",
+            "details": "Local Guide - The Scout meets a local guide of the area",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Chance Meeting",
+            "details": "Remote Site - A remote area, like ruins or an abandoned village",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Chance Meeting",
+            "details": "Secluded Encampment - Explore to find your way off the beaten path",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Chance Meeting",
+            "details": "Stranded Travelers - You can help other travellers",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Scout",
+            "event": "Joyful Sight",
+            "details": "Wandering Dúnedain - Helpful Rangers of the North",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Scout",
+            "event": "Joyful Sight",
+            "details": "Inspiring Vista - Explore to reach a vantage point",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Scout",
+            "event": "Joyful Sight",
+            "details": "Enchanted Camp - A magical beautiful spot for a camp site",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Scout",
+            "event": "Joyful Sight",
+            "details": "Awe-inspiring Ruins - Explore to find the place",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Scout",
+            "event": "Joyful Sight",
+            "details": "Scenic Route - The path leads through a beautiful area",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Scout",
+            "event": "Joyful Sight",
+            "details": "Peaceful Sanctuary - A sacred grove, glade, cave etc.",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        }
     ]
 }
