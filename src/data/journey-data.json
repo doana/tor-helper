@@ -1,0 +1,538 @@
+{
+    "event_types": [
+        "Terrible Misfortune",
+        "Despair",
+        "Ill Choices",
+        "Ill Choices",
+        "Mishap",
+        "Mishap",
+        "Mishap",
+        "Mishap",
+        "Short Cut",
+        "Short Cut",
+        "Chance Meeting",
+        "Joyful Sight"
+    ],
+    "roles": [
+        "Scout",
+        "Lookout", 
+        "Hunter"
+    ],
+    "fatigue": {
+        "Terrible Misfortune": 3,
+        "Despair": 2,
+        "Ill Choices": 2,
+        "Mishap": 2,
+        "Short Cut": 1,
+        "Chance Meeting": 1,
+        "Joyful Sight": 0
+    },
+    "events": [
+        {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Ill gains - The Meat of the prey makes the hunter ill",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Rival predator - Avoid becomming the hunted",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Last throes - Get injured by your slain prey",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Flanked - Another beast or animal of the same type attacks",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Dragged - The prey drags the hunter a distance",
+            "result": "If the roll fails, the target is Wounded"
+        },
+                {
+            "target": "Hunter",
+            "event": "Terrible Misfortune",
+            "details": "Faulty Trap - A trap set by the hunter injures them",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "Unclean kill - THe kill is particularly gruesome and agonizing",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "Ghostly prey - The company may see ghosts of the prey",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "Hunting rounds - Traverse grisly hunting grounds of a beast",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "Fading vigour - Hunt to gain sustenance or starve",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "Misfired shot - Accidentally injured an innocent bystander",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Despair",
+            "details": "Fell beast - Only bring back meat o fa corrupted beast",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Ill Choices",
+            "details": "Mismanaged Provisions - Hunt to replensih stores",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Ill Choices",
+            "details": "Lost Equipment - Hunting gear gets lost",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Ill Choices",
+            "details": "Questionable forage - Forage that seemed appetizing turns foul",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Ill Choices",
+            "details": "Lost quarry - Follow its tracks or lose it",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Ill Choices",
+            "details": "Stench - The kill leaves the hunter with a foul stench",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Ill Choices",
+            "details": "Trampled camp - The prey destroys the camp if not careful",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Hunter",
+            "event": "Mishap",
+            "detail": "Sparce wildlife - Forage what you can",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Hunter",
+            "event": "Mishap",
+            "detail": "In the thicket - The prey wanders into a hazardous terrain",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Hunter",
+            "event": "Mishap",
+            "detail": "Faulty equipment - Take time to repair hunting gear",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Hunter",
+            "event": "Mishap",
+            "detail": "Elusive quarry - Hunt to track it down",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Hunter",
+            "event": "Mishap",
+            "detail": "No luck - Traps don’t seem to work",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Hunter",
+            "event": "Mishap",
+            "detail": "Disturbed wildlife - A hasty retreat is necessary",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Hunter",
+            "event": "Shortcut",
+            "detail": "Game trail - Hunting to traverse the path",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Shortcut",
+            "detail": "Forage path - Forage grows along a short cut",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Shortcut",
+            "detail": "Rich bounty - Especially energy-rich or quick meals",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Shortcut",
+            "detail": "Animal guide - Follow at a distance",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Shortcut",
+            "detail": "Lucky short cut - The hunter discovers a short cut while hunting",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Shortcut",
+            "detail": "Beastly help - A beast creates a short cut",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "detail": "Lone hunter - Trade stories",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "detail": "Hunting party - Trade provisions and gear",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "detail": "Domesticated animal - Encounter of some domesticated animal",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "detail": "Noble beast - Hunting to commune with it",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "detail": "Helpful predator - A predator tolerates the help of the Hunter",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Chance Meeting",
+            "detail": "Fine prey - Hunter encounters a particular fine prey",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Hunter",
+            "event": "Joyful Sight",
+            "detail": "Majestic creatures - Observe without startling them",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Hunter",
+            "event": "Joyful Sight",
+            "detail": "Rare foraging - Very rare foraging (like rare medicinal herbs)",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Hunter",
+            "event": "Joyful Sight",
+            "detail": "Elven hunter or Great Eagle - Noble elven hunter or Great Eagle high above",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Hunter",
+            "event": "Joyful Sight",
+            "detail": "Abundant foraging - Hunting to replenish the rations of the Company",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Hunter",
+            "event": "Joyful Sight",
+            "detail": "Tame beast - A beast suddenly self-tames and becomes friendly",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Hunter",
+            "event": "Joyful Sight",
+            "detail": "Rare prey - Very rare prey (like a white stag)",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Lookout",
+            "event": "Terrible Misfortune",
+            "details": "Trap - Overlooked a trap",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Lookout",
+            "event": "Terrible Misfortune",
+            "details": "Nightly Encounter - Don’t fall asleep during watch",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Lookout",
+            "event": "Terrible Misfortune",
+            "details": "Dangerous Spot - The look-out spot collapses, is slippery or faulty",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Lookout",
+            "event": "Terrible Misfortune",
+            "details": "Hidden Hazard - Awareness to avoid stumbling into danger",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Lookout",
+            "event": "Terrible Misfortune",
+            "details": "Warning Shot - Trespassed into a forbidden area",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Lookout",
+            "event": "Terrible Misfortune",
+            "details": "Stalking Enemy - Spot the foul presence",
+            "result": "If the roll fails, the target is Wounded"
+        },
+        {
+            "target": "Lookout",
+            "event": "Despair",
+            "details": "Enemy Tracks - Hide from the Enemy",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Despair",
+            "details": "Betrayed - False advice leads to peril",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Despair",
+            "details": "Nightmarish Presence - Awareness to sense the danger",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Despair",
+            "details": "Blighted Area - Try to avoid it and warn others",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Despair",
+            "details": "Poor Folk - It is too dangerous/impossible to help someone",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Despair",
+            "details": "Grisly Scene - Awareness to be forewarned",
+            "result": "If the roll fails, everyone in the Company gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Ill Choices",
+            "details": "Awful Spot - Avoiding danger leads to an awful camp spot",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Ill Choices",
+            "details": "Paranoid - Mistrust and worries paralyse the Look-out",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Ill Choices",
+            "details": "Overlooked Hazard - Awareness to escape safely",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Ill Choices",
+            "details": "Misjudged Encounter - An encounter turns poorly",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Ill Choices",
+            "details": "Shadowed - Does someone follow the Company?",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Ill Choices",
+            "details": "Haunting Visions - Awareness to overcome darkness",
+            "result": "If the roll fails, the target gains 1 Shadow point (Dread)."
+        },
+        {
+            "target": "Lookout",
+            "event": "Mishap",
+            "details": "Overcautious - Leads to a long detour",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Lookout",
+            "event": "Mishap",
+            "details": "Dull Blades - Equipment is uncared for, needs tending",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Lookout",
+            "event": "Mishap",
+            "details": "Obstructed Path - Awareness to spot a way around",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Lookout",
+            "event": "Mishap",
+            "details": "Wrong Watch - Everyone needs more sleep",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Lookout",
+            "event": "Mishap",
+            "details": "Hunt Thieves - Thieves steal something from camp",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Lookout",
+            "event": "Mishap",
+            "details": "Wandering Enemies - Awareness to sense their coming",
+            "result": "If the roll fails, add 1 day to the length of the journey, and the target gains 1 additional Fatigue."
+        },
+        {
+            "target": "Lookout",
+            "event": "Shortcut",
+            "details": "Hidden Path - The Look-out discovers a hidden path",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Shortcut",
+            "details": "Distant Sounds - A river or village noises help a quicker orientation",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Shortcut",
+            "details": "Helpful Tracks - Awareness to follow the tracks",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Shortcut",
+            "details": "Good Vantage - The Look-out locates a shorter path",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Shortcut",
+            "details": "Distant Signs - Smoke or other signals lead to a better path",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Shortcut",
+            "details": "Waypoint - Awareness to recognize the landmark",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Chance Meeting",
+            "details": "Person in Need - The Look-out finds a person in need off the path",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Chance Meeting",
+            "details": "Shy Other - Awareness to spot them",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Chance Meeting",
+            "details": "Discreet Watcher - Awareness to spot them",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Chance Meeting",
+            "details": "Band of Warriors - Trade stories, get equipment repaired",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Chance Meeting",
+            "details": "Secluded Home - A hidden home, like a hut, tree house or cave",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Chance Meeting",
+            "details": "Auspicious Gathering - Some ritual or ceremony of local people",
+            "result": "If the roll succeeds, reduce the length of the journey by 1 day."
+        },
+        {
+            "target": "Lookout",
+            "event": "Joyful Sight",
+            "details": "Playful Animals - Like fireflies, river otters, colourful songbirds",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Lookout",
+            "event": "Joyful Sight",
+            "details": "Wandering Elves - Almost silently, the Look-out might still notice them",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Lookout",
+            "event": "Joyful Sight",
+            "details": "Benevolent Being - Awareness to sense their presence",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Lookout",
+            "event": "Joyful Sight",
+            "details": "Natural Phenomenon - Breathtaking beauty",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Lookout",
+            "event": "Joyful Sight",
+            "details": "Ancient Monument - Awareness to recognize its significance",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        {
+            "target": "Lookout",
+            "event": "Joyful Sight",
+            "details": "Music - The Look-Out hears pleasant music",
+            "result": "If the roll succeeds, everyone in the Company regains 1 Hope."
+        },
+        
+        
+    ]
+}
