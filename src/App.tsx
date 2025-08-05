@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <h1>TOR Helper</h1>
+      <h1 className="text-center">TOR Helper</h1>
       <div className="card  w-8">
        <Accordion>
         <AccordionSummary

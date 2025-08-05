@@ -128,7 +128,7 @@ const JourneyEventGenerator: React.FC = () => {
             <Typography>No past events.</Typography>
           ) : (
             log.map((event, idx) => (
-              <div key={idx} style={{ marginBottom: 16 }}>
+              <div key={idx} style={{ marginBottom: 16, borderBottom: '1px solid #ccc', paddingBottom: 8 }}>
                 <JourneyEvent {...event} />
               </div>
             ))
