@@ -23,6 +23,14 @@ const JourneyEventGenerator: React.FC = () => {
   const [eventCount, setEventCount] = useState(0)
   const [region, setRegion] = useState("border");
 
+  /**
+   * Generate a random event based on the current region.
+   * - Selects a random target (Scout, Lookout, or Hunter).
+   * - Selects a random event type based on the region (Border, Wild, or Dark).
+   * - Filters the events to find those that match the target and event type.
+   * - Randomly selects one of the filtered events.
+   * @returns 
+   */
   const getRandomEvent = (): object => {
     const target = getRandomTarget();
     const event_type = getRandomEventType();
@@ -31,10 +39,23 @@ const JourneyEventGenerator: React.FC = () => {
     return targeted_events[idx];
   };
 
+  /**
+   * Filter events by a role (the event target) and the event type.
+   * @param target String One of: Scout, Lookout, or Hunter
+   * @param type String - One of Terrible Misfortune, Dispair, Ill Choices, Mishap, Short Cut, Chance Meeting, or Joyful Sight
+   * @returns A filtered list of events that match the target and type.
+   */
   const getRoleEvents = (target: string, type: string) => {
     return journeyEventsList.filter((event: object) => event.target == target && event.event == type )
   }
 
+  /**
+   * Randomly roll to determine the type of event based on the region. 
+   * - Borderland rolls are favoured
+   * - Wildland rolls are straight
+   * - Darkland rolls are ill-favoured
+   * @returns A random event type based on the region.
+   */
   const getRandomEventType = () => {
     let event_type_idx1;
     let event_type_idx2;
@@ -66,12 +87,20 @@ const JourneyEventGenerator: React.FC = () => {
     }
   }
 
+  /**
+   * Randomly select a target from the list of targets (Scout, Hunter, or Lookout).
+   * @returns A random target object from the targets list.
+   */
   const getRandomTarget = () => {
     const target_idx = Math.floor(Math.random() * targets.length);
     const target = targets[target_idx];
     return target;
   }
 
+  /**
+   * Click handler for the "Next Event" button.
+   * Generates a random event, updates the current event state, and adds the event to the log.
+   */
   const handleRandomize = () => {
     const event = getRandomEvent();
     setCurrentEvent(event);
@@ -79,6 +108,10 @@ const JourneyEventGenerator: React.FC = () => {
     setEventCount(log.length);
   };
 
+  /**
+   * Click handler for the "New Journey" button.
+   * Resets the event count, current event, and log.
+   */
   const handleNewJourney = () => {
     setEventCount(0);
     setCurrentEvent({})
