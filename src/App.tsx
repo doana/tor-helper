@@ -33,6 +33,7 @@ function App() {
             <Typography component="span">Journey Helper</Typography>
           </AccordionSummary>
           <AccordionDetails>
+            <h2 className="text-center">Events</h2>
             <JourneyEventGenerator />
             <h2 className="text-center">Weather</h2>
             <WeatherGenerator />

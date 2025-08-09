@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CasinoIcon from '@mui/icons-material/Casino';
+import CloudIcon from '@mui/icons-material/Cloud';
 import {Button, InputLabel, Select, MenuItem, FormControl} from '@mui/material'
 import type { SelectChangeEvent } from '@mui/material/Select';
 
@@ -112,7 +112,7 @@ const WeatherGenerator: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="tool weather-generator">
       <div id="journey-form" className="d-flex flex-column justify-content-center align-items-center flex-grow-1 gap-1">
         <span className="region-wrapper d-flex flex-row align-items-center gap-1">
           <FormControl size="small" sx={{ minWidth: 120 }}>
@@ -150,7 +150,7 @@ const WeatherGenerator: React.FC = () => {
           </FormControl>
           
         </span>
-        <Button variant="contained" onClick={handleRandomize} startIcon={<CasinoIcon />}>
+        <Button variant="contained" onClick={handleRandomize} startIcon={<CloudIcon />}>
           Weather Change
         </Button>
       </div>

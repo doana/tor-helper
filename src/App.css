@@ -1,3 +1,31 @@
+.card {
+  max-width: 500px;
+}
+
+#journey-content .tool {
+  margin-bottom: 1rem;
+}
+
+.journey-event, 
+.weather-event {
+  margin-top: 1rem;
+} 
+
+#log-content .journey-event {
+  margin-top: 0px;
+  border-bottom: 1px solid #CCC;
+  padding: 1rem 0px;
+}
+
+#log-content .journey-event:last-child {
+  border-bottom: none;
+}
+
+#log-content {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
 .condition {
   text-transform: capitalize;
 }

@@ -101,13 +101,9 @@ const JourneyEventGenerator: React.FC = () => {
    * Generates a random event, updates the current event state, and adds the event to the log.
    */
   const handleRandomize = () => {
-    console.log(log.length)
-    console.log({log});
     const event = getRandomEvent();
     setCurrentEvent(event);
     setLog((prev => [event, ...prev]));
-    console.log(log.length)
-    console.log({log});
   };
 
   /**

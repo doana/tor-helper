@@ -13,7 +13,7 @@ const WeatherEvent: React.FC<WeatherEventProps> = ({ condition, description, eff
   }
 
   return (
-    <div className="journey-event d-flex flex-column">
+    <div className="weather-event d-flex flex-column">
       <span className="property d-flex flex-row gap-2">
         <span className="label fw-bold">Description:</span>
 
