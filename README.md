@@ -4,6 +4,14 @@ A Vite + React app to provide helpful tools for the Loremaster in [The One Ring 
 
 You can access this on the web at: https://doana.github.io/tor-helper/
 
+## Credits and Thanks
+Much of the game systems built into this app are not my creation. I've just codified those rulesets into an easy to use app that can be integrated as an extension into the Owlbear Rodeo VTT.
+
+ - The various Journey event types and descriptions were drawn from the Detailed Journey Events suppliment created by Dennis Detwiller.
+ - The weather system was inspired by the Weather on Journeys suppliment written by Aiden Harrison.
+
+I found both of these inside of the fabulous compendium of homebrewed suppliments: [The One Ring 2e Homebrew Materieals AKA Circle of Noms Homebrew Collection](https://bright-sun-games.itch.io/the-one-ring-2e-homebrew-materials).
+
 ## Setup
 This app was built using nodejs v22.17.1. 
 
