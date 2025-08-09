@@ -19,8 +19,7 @@ const event_types = data.event_types;
 
 const JourneyEventGenerator: React.FC = () => {
   const [currentEvent, setCurrentEvent] = useState({});
-  const [log, setLog] = useState([journeyEventsList[0]]);
-  const [eventCount, setEventCount] = useState(0)
+  const [log, setLog] = useState([]);
   const [region, setRegion] = useState("border");
 
   /**
@@ -102,10 +101,13 @@ const JourneyEventGenerator: React.FC = () => {
    * Generates a random event, updates the current event state, and adds the event to the log.
    */
   const handleRandomize = () => {
+    console.log(log.length)
+    console.log({log});
     const event = getRandomEvent();
     setCurrentEvent(event);
-    setLog(prev => [event, ...prev]);
-    setEventCount(log.length);
+    setLog((prev => [event, ...prev]));
+    console.log(log.length)
+    console.log({log});
   };
 
   /**
@@ -113,7 +115,6 @@ const JourneyEventGenerator: React.FC = () => {
    * Resets the event count, current event, and log.
    */
   const handleNewJourney = () => {
-    setEventCount(0);
     setCurrentEvent({})
     setLog([]);
   }
@@ -123,7 +124,7 @@ const JourneyEventGenerator: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="tool journey-event-generator">
       <div id="journey-form" className="d-flex flex-column justify-content-center align-items-center flex-grow-1 gap-1">
         <span className="region-wrapper d-flex flex-row align-items-center gap-1">
           <FormControl size="small" sx={{ minWidth: 120 }}>
@@ -154,16 +155,14 @@ const JourneyEventGenerator: React.FC = () => {
           aria-controls="log-content"
           id="log-header"
         >
-          <Typography component="span">Event Log ({eventCount})</Typography>
+          <Typography component="span">Event Log ({log.length})</Typography>
         </AccordionSummary>
         <AccordionDetails>
           {log.length === 0 ? (
             <Typography>No past events.</Typography>
           ) : (
             log.map((event, idx) => (
-              <div key={idx} style={{ marginBottom: 16, borderBottom: '1px solid #ccc', paddingBottom: 8 }}>
-                <JourneyEvent {...event} />
-              </div>
+              <JourneyEvent key={idx} {...event} />
             ))
           )}
         </AccordionDetails>
