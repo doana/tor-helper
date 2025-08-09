@@ -12,4 +12,4 @@ Run `npm run dev`. The site will be available at http://localhost:5173/
 Run `npm run build` followed by `npm run preview` to build and run the app.
 
 ## Deploying
-Run `npm run deploy`. This will build the app and push tot he gh-pages branch on GitHub.
+Run `npm run deploy`. This will build the app and push tot he gh-pages branch on GitHub. The app should then be available at https://doana.github.io/tor-helper/
