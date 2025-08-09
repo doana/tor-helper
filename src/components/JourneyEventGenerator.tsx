@@ -126,7 +126,7 @@ const JourneyEventGenerator: React.FC = () => {
     <div>
       <div id="journey-form" className="d-flex flex-column justify-content-center align-items-center flex-grow-1 gap-1">
         <span className="region-wrapper d-flex flex-row align-items-center gap-1">
-          <FormControl fullwidth size="small" sx={{ minWidth: 120 }}>
+          <FormControl size="small" sx={{ minWidth: 120 }}>
             <InputLabel id="region-label">Region</InputLabel>
             <Select
               labelId="region-label"

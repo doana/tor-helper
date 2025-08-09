@@ -1,0 +1,145 @@
+{
+    "conditions": [
+        "terrible",
+        "poor",
+        "normal",
+        "fair",
+        "ideal"
+    ],
+    "condition_distribution": [
+        "terrible",
+        "poor",
+        "poor",
+        "poor",
+        "poor", 
+        "poor",
+        "normal", 
+        "normal",
+        "normal", 
+        "fair",
+        "fair",
+        "ideal"
+    ],
+    "spring": [
+        {
+            "condition": "terrible", 
+            "description": "Terrible storms and cloying mud underfoot.", 
+            "effect": "Event tests lose 2d"
+        },
+        {
+            "condition": "poor", 
+            "description": "Inclement weather and intermittent gales.", 
+            "effect": "Event tests lose 1d"
+        },
+        {
+            "condition": "normal", 
+            "description": "Normal weather, partially cloudy with occasional showers.", 
+            "effect": "No effect"
+        },
+        {
+            "condition": "fair", 
+            "description": "Clear skies and cool weather day and night.", 
+            "effect": "Event tests gain 1d"
+        },
+        {
+            "condition": "ideal", 
+            "description": "Blue skies, refreshing breezes, and perfect weather.", 
+            "effect": "Event tests gain 2d"
+        }
+    ],
+    "summer": [
+        {
+            "condition": "terrible", 
+            "description": "Summer storms, sweltering heat, and/or bone-dry conditions.", 
+            "effect": "Event tests lose 2d"
+        },
+        {
+            "condition": "poor", 
+            "description": "High humidity or bad dry-heats with little water.", 
+            "effect": "Event tests lose 1d"
+        },
+        {
+            "condition": "normal", 
+            "description": "Sunny days with a good mixture of heat and brisk breaks with humid showers.", 
+            "effect": "No effect"
+        },
+        {
+            "condition": "fair", 
+            "description": "Clear skies and gentle breezes create a cool and sunny atmosphere.", 
+            "effect": "Event tests gain 1d"
+        },
+        {
+            "condition": "ideal", 
+            "description": "Glorious weather that feels far too temperate and refreshing for the middle of summer.", 
+            "effect": "Event tests gain 2d"
+        }
+    ],
+    "fall": [
+        {
+            "condition": "terrible", 
+            "description": "Horrible weather, driving rain, and freak storms cause horrendous conditions.", 
+            "effect": "Event tests lose 2d"
+        },
+        {
+            "condition": "poor", 
+            "description": "Gloomy skies, chilly weather, and heavy rainstorms.", 
+            "effect": "Event tests lose 1d"
+        },
+        {
+            "condition": "normal", 
+            "description": "Normal fall weather with occasional rain and warm days.", 
+            "effect": "No effect"
+        },
+        {
+            "condition": "fair", 
+            "description": "Cool weather, pleasant humidity, gentle breezes, and little rain.", 
+            "effect": "Event tests gain 1d"
+        },
+        {
+            "condition": "ideal", 
+            "description": "Clear skies, fine breezes, and crisp air provide a wondrous feeling.", 
+            "effect": "Event tests gain 2d"
+        }
+    ],
+    "winter": [
+        {
+            "condition": "terrible", 
+            "description": "Terrible blizzards, driven snowbanks, and howling winds create a frozen hellscape.", 
+            "effect": "Event tests lose 2d"
+        },
+        {
+            "condition": "poor", 
+            "description": "Heavy snow and frozen earth create an icy landscape.", 
+            "effect": "Event tests lose 1d"
+        },
+        {
+            "condition": "normal", 
+            "description": "Light snows and chill winds prove no match for good winter clothing.", 
+            "effect": "No effect"
+        },
+        {
+            "condition": "fair", 
+            "description": "Cloudy days with sporadic snowfall make a pleasant atmosphere that only slightly chills the tip of the nose.", 
+            "effect": "Event tests gain 1d"
+        },
+        {
+            "condition": "ideal", 
+            "description": "The land is blanketed in a thin layer of soft white snow under a clear sky, creating a beautiful and magical winter wonderland.", 
+            "effect": "Event tests gain 2d"
+        }
+    ],
+    "changes": [
+        "-2",
+        "-1",
+        "-1", 
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "2"
+    ]
+}

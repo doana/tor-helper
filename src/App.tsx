@@ -15,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css'
 import JourneyEventGenerator from './components/JourneyEventGenerator';
+import WeatherGenerator from './components/WeatherGenerator';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,33 +24,20 @@ function App() {
     <>
       <h1 className="text-center">TOR Helper</h1>
       <div className="card  w-8">
-       <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
-          aria-controls="journey-content"
-          id="journey-header"
-        >
-          <Typography component="span">Journey Events</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <JourneyEventGenerator />
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
-          aria-controls="weather-content"
-          id="weather-header"
-        >
-          <Typography component="span">Weather</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls="journey-content"
+            id="journey-header"
+          >
+            <Typography component="span">Journey Helper</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <JourneyEventGenerator />
+            <h2 className="text-center">Weather</h2>
+            <WeatherGenerator />
+          </AccordionDetails>
+        </Accordion>
       </div>
     </>
   )
