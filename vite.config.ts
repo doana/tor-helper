@@ -8,6 +8,7 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
+    cors: true
   },
   plugins: [react()],
 })

@@ -6,8 +6,15 @@ body {
   justify-content: center;
 }
 
+#root {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
 .card {
-  max-width: 500px;
+  max-width: 400px;
+  width: 100%;
 }
 
 #journey-content .tool {

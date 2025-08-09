@@ -1,0 +1,14 @@
+{
+  "name": "TOR Helper",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "icon": "/tor-helper/icon.png",
+  "description": "A collection of useful helpers for The One Ring RPG",
+  "action": {
+    "title": "TOR Helper",
+    "icon": "/tor-helper/icon.png",
+    "popover": "/tor-helper/",
+    "height": 800,
+    "width": 400
+  }
+}
