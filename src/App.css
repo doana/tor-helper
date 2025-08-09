@@ -1,5 +1,13 @@
+body {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .card {
-  width: 500px;
+  max-width: 500px;
 }
 
 #journey-content .tool {
@@ -24,6 +32,8 @@
 #log-content {
   max-height: 20rem;
   overflow-y: auto;
+  scrollbar-color: #AAA white;
+  scrollbar-width: thick;
 }
 
 .condition {
