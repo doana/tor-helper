@@ -12,14 +12,15 @@ import type { SelectChangeEvent } from '@mui/material/Select';
 
 import JourneyEvent from './JourneyEvent';
 import data from '../data/journey-data.json';
+import { EventDAO } from '../dao/eventDAO';
 
 const journeyEventsList = data.events;
 const targets = data.roles;
 const event_types = data.event_types;
 
 const JourneyEventGenerator: React.FC = () => {
-  const [currentEvent, setCurrentEvent] = useState({});
-  const [log, setLog] = useState([]);
+  const [currentEvent, setCurrentEvent] = useState<EventDAO>(new EventDAO('', '', '', ''));
+  const [log, setLog] = useState<EventDAO[]>([]);
   const [region, setRegion] = useState("border");
 
   /**
@@ -30,12 +31,13 @@ const JourneyEventGenerator: React.FC = () => {
    * - Randomly selects one of the filtered events.
    * @returns 
    */
-  const getRandomEvent = (): object => {
-    const target = getRandomTarget();
+  const getRandomEvent = (): EventDAO => {
+    const random_target = getRandomTarget();
     const event_type = getRandomEventType();
-    const targeted_events = getRoleEvents(target, event_type);
+    const targeted_events = getRoleEvents(random_target, event_type);
     const idx = Math.floor(Math.random() * targeted_events.length);
-    return targeted_events[idx];
+    const { target, event, details, result } = targeted_events[idx];
+    return new EventDAO(target, event, details, result);
   };
 
   /**
@@ -45,7 +47,7 @@ const JourneyEventGenerator: React.FC = () => {
    * @returns A filtered list of events that match the target and type.
    */
   const getRoleEvents = (target: string, type: string) => {
-    return journeyEventsList.filter((event: object) => event.target == target && event.event == type )
+    return journeyEventsList.filter((event: EventDAO) => event.target == target && event.event == type )
   }
 
   /**
@@ -84,6 +86,8 @@ const JourneyEventGenerator: React.FC = () => {
         event_type = event_types[event_type_idx];
         return event_type
     }
+
+    return ""
   }
 
   /**
@@ -111,7 +115,7 @@ const JourneyEventGenerator: React.FC = () => {
    * Resets the event count, current event, and log.
    */
   const handleNewJourney = () => {
-    setCurrentEvent({})
+    setCurrentEvent(new EventDAO('', '', '', ''));
     setLog([]);
   }
 

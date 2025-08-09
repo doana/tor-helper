@@ -5,6 +5,7 @@ import type { SelectChangeEvent } from '@mui/material/Select';
 
 import WeatherEvent from './WeatherEvent';
 import data from '../data/weather-data.json';
+import { WeatherDAO } from '../dao/weatherDAO';
 
 const conditions = data.conditions;
 const condition_distributions = data.condition_distribution;
@@ -14,19 +15,21 @@ const changes = data.changes;
  * A weather generator component that allows users to select a season and starting weather condition, then generates and shifts weather conditions based on predefined rules.
  * This component is based on the "Weather on Journeys" rules by Aiden Harrison from the Circle of Noms suppliment collection. 
  */
+type Season = "spring" | "summer" | "fall" | "winter";
+
 const WeatherGenerator: React.FC = () => {
-  const [currentSeason, setCurrentSeason] = useState("spring");
-  const [currentWeather, setCurrentWeather] = useState("");
+  const [currentSeason, setCurrentSeason] = useState<Season>("spring");
+  const [currentWeather, setCurrentWeather] = useState(new WeatherDAO("",  "", ""));
   const [startingWeather, setStartingWeather] = useState("random");
 
   const handleSeasonChange = (event: SelectChangeEvent) => {
-    setCurrentSeason(event.target.value);
+    setCurrentSeason(event.target.value as Season);
   };
 
   const handleStartingWeatherChange = (event: SelectChangeEvent) => {
     if (event.target.value === "random") {
       setStartingWeather(event.target.value);
-      setCurrentWeather("");
+      setCurrentWeather(new WeatherDAO("",  "", ""));
     }
     else {
       setStartingWeather(event.target.value);
@@ -39,9 +42,6 @@ const WeatherGenerator: React.FC = () => {
    * Generates a random event, updates the current event state, and adds the event to the log.
    */
   const handleRandomize = () => {
-
-    const season_data = data[currentSeason];
-
     if (!currentWeather) {
       console.log('Generating initial weather...');
 
@@ -103,10 +103,9 @@ const WeatherGenerator: React.FC = () => {
    * Retrieves the weather details for a given season and condition.
    * @param season - The current season (spring, summer, fall, winter).
    * @param condition - The weather condition to retrieve details for.
-   * @returns An object containing the weather condition, description, and effect.
    */
-  const getWeatherDetails = (season: string, condition: string) => {
-    const season_data = data[currentSeason];
+  const getWeatherDetails = (season: Season, condition: string) => {
+    const season_data = data[season];
     const index = conditions.indexOf(condition);
     return season_data[index];
   }
