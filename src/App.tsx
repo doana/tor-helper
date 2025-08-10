@@ -21,21 +21,33 @@ function App() {
     <>
       <h1 className="text-center">TOR Helper</h1>
       <div className="card  w-8">
-        <Accordion defaultExpanded>
+        <Accordion id="journeys">
           <AccordionSummary
             expandIcon={<ArrowDropDownIcon />}
             aria-controls="journey-content"
             id="journey-header"
           >
-            <Typography component="span">Journey Helper</Typography>
+            <Typography component="span">Journey Events</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <h2 className="text-center">Events</h2>
+            <h2 className="text-center">Journey Events</h2>
             <JourneyEventGenerator />
-            <h2 className="text-center">Weather</h2>
-            <WeatherGenerator />
+
           </AccordionDetails>
         </Accordion>
+        <Accordion id="weather">
+          <AccordionSummary
+            expandIcon={<ArrowDropDownIcon />}
+            aria-controls="weather-content"
+            id="weather-header"
+          >
+            <Typography component="span">Weather</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <h2 className="text-center">Weather on Journeys</h2>
+            <WeatherGenerator />
+          </AccordionDetails>
+      </Accordion>
       </div>
     </>
   )
