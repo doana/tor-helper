@@ -22,7 +22,7 @@ Run `npm run dev`. The site will be available at http://localhost:5173/
 Run `npm run build` followed by `npm run preview` to build and run the app.
 
 ## Deploying
-Run `npm run deploy`. This will build the app and push tot he gh-pages branch on GitHub. The app should then be available at https://doana.github.io/tor-helper/
+Run `npm run deploy`. This will build the app and push to the gh-pages branch on GitHub. The app should then be available at https://doana.github.io/tor-helper/
 
 ## Owlbear Rodeo
 While you can use this app as a standalone webapp, it was designed to be used as an extension in the Owlbear Rodeo VTT. To add it to your room:
