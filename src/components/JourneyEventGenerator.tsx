@@ -22,6 +22,7 @@ const JourneyEventGenerator: React.FC = () => {
   const [currentEvent, setCurrentEvent] = useState<EventDAO>(new EventDAO('', '', '', ''));
   const [log, setLog] = useState<EventDAO[]>([]);
   const [region, setRegion] = useState("border");
+  const [fellowship_maps_bonus, setFellowshipMapsBonus] = useState(0);
 
   /**
    * Generate a random event based on the current region.
@@ -63,18 +64,34 @@ const JourneyEventGenerator: React.FC = () => {
     let event_type_idx;
     let event_type;
 
+    console.log({fellowship_maps_bonus});
+
     switch (region) {
       case "border": 
         console.log('favoured event roll');
         event_type_idx1 = Math.floor(Math.random() * event_types.length);
         event_type_idx2 = Math.floor(Math.random() * event_types.length);
-        event_type_idx = Math.max(event_type_idx1, event_type_idx2)
+        event_type_idx = Math.max(event_type_idx1, event_type_idx2);
+
+        // Account for the fellowship undertaking that applies a bonus to the event type roll.
+        event_type_idx += fellowship_maps_bonus;
+        if (event_type_idx >= event_types.length) {
+          event_type_idx = event_types.length - 1;
+        }
+
         event_type = event_types[event_type_idx];
         return event_type;
 
       case "wild":
         console.log('straight event roll');
         event_type_idx = Math.floor(Math.random() * event_types.length);
+
+        // Account for the fellowship undertaking that applies a bonus to the event type roll.
+        event_type_idx += fellowship_maps_bonus;
+        if (event_type_idx >= event_types.length) {
+          event_type_idx = event_types.length - 1;
+        }
+
         event_type = event_types[event_type_idx];
         return event_type;
 
@@ -83,6 +100,13 @@ const JourneyEventGenerator: React.FC = () => {
         event_type_idx1 = Math.floor(Math.random() * event_types.length);
         event_type_idx2 = Math.floor(Math.random() * event_types.length);
         event_type_idx = Math.min(event_type_idx1, event_type_idx2)
+
+        // Account for the fellowship undertaking that applies a bonus to the event type roll.
+        event_type_idx += fellowship_maps_bonus;
+        if (event_type_idx >= event_types.length) {
+          event_type_idx = event_types.length - 1;
+        }
+
         event_type = event_types[event_type_idx];
         return event_type
     }
@@ -141,7 +165,10 @@ const JourneyEventGenerator: React.FC = () => {
               <MenuItem value={"dark"}>Dark Land</MenuItem>
             </Select>
           </FormControl>
-          
+        </span>
+        <span className="fellowship-maps-bonus-wrapper m-2 d-flex flex-row align-items-center gap-1">
+          <label htmlFor="fellowship-maps">Ponder Storied Maps Bonus</label>
+          <input type="checkbox" id="fellowship-maps" checked={fellowship_maps_bonus > 0} onChange={(e) => setFellowshipMapsBonus(e.target.checked ? 1 : 0)} />
         </span>
         <Button variant="contained" onClick={handleRandomize} startIcon={<CasinoIcon />}>
           Next Event
@@ -180,3 +207,4 @@ const JourneyEventGenerator: React.FC = () => {
 };
 
 export default JourneyEventGenerator;
+<label htmlFor="fellowship-maps">Fellowship Maps Bonus</label>
