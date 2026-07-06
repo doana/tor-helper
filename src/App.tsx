@@ -8,6 +8,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,11 +18,18 @@ import './App.css'
 import JourneyEventGenerator from './components/JourneyEventGenerator';
 import WeatherGenerator from './components/WeatherGenerator';
 
-function App() {
 
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
+function App() {
   return (
-    <>
-      <h1 className="text-center">TOR Helper</h1>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <h1 className="title text-center">TOR Helper</h1>
       <div className="card w-8">
         <Accordion id="journeys">
           <AccordionSummary
@@ -49,7 +59,7 @@ function App() {
           </AccordionDetails>
       </Accordion>
       </div>
-    </>
+    </ThemeProvider>
   )
 }
 
