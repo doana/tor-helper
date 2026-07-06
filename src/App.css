@@ -3,6 +3,10 @@
   --fg-color: #FFF;
 }
 
+html {
+  scrollbar-color: #AAA var(--bg-color);
+}
+
 body {
   background-color: var(--bg-color) !important;
   width: 100%;
@@ -51,6 +55,7 @@ body {
   max-height: 20rem;
   overflow-y: auto;
   scrollbar-width: thick;
+  scrollbar-color: #AAA var(--bg-color);
 }
 
 .condition {
