@@ -4,7 +4,7 @@
 }
 
 html {
-  scrollbar-color: #AAA var(--bg-color);
+  scrollbar-color: #AAA var(--bg-color) !important;
 }
 
 body {
