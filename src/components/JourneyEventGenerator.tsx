@@ -195,7 +195,7 @@ const JourneyEventGenerator: React.FC = () => {
         </AccordionDetails>
       </Accordion>
 
-      <div className="mt-4 d-flex flex-row justify-content-end gap-1">
+      <div className="mt-4 d-flex flex-row justify-content-center gap-1">
         <Button variant="contained" onClick={handleNewJourney} startIcon={<ExploreIcon />}>
           New Journey
         </Button>  
