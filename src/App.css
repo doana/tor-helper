@@ -1,10 +1,10 @@
 :root {
-  --bg-color: rgba(255, 255, 255, 0.09);
+  --bg-color: rgba(0, 0, 0, 0.09);
   --fg-color: #FFF;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color) !important;
   width: 100%;
   position: relative;
   display: flex;
