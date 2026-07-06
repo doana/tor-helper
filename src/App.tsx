@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <h1 className="text-center">TOR Helper</h1>
-      <div className="card  w-8">
+      <div className="card w-8">
         <Accordion id="journeys">
           <AccordionSummary
             expandIcon={<ArrowDropDownIcon />}
