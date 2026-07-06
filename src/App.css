@@ -50,7 +50,6 @@ body {
 #log-content {
   max-height: 20rem;
   overflow-y: auto;
-  scrollbar-color: #AAA white;
   scrollbar-width: thick;
 }
 
